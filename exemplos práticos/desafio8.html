@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio do triângulo</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("digite o primeiro lado"));
+        var b = parseInt(prompt("digite o segundo lado"));
+        var c = parseInt(prompt("digite o terceiro lado"));
+
+
+            if ((a + b > c) && (a + c > b) && (b + c > a)) {
+                document.write("As medidas que você digitou formam um triângulo<br>");
+                
+                if (a === b && b === c) {
+                    document.write("É um triângulo equilátero<br>");
+                } else if (a !== b && b !== c && a !== c) {
+                    document.write("É um triângulo escaleno<br>");
+                } else {
+                    document.write("É um triângulo isósceles<br>");
+                }
+            } else {
+                document.write("As medidas que você digitou não formam um triângulo, tente novamente!");
+            }
+     
+       
+        
+    </script>
+</body>
+</html>

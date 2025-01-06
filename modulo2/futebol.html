@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria de futebol</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Digite o seu nome:");
+        var idade = parseInt(prompt("Digite sua idade:"));
+        var categoria;
+        switch (idade) {
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+                categoria = "infantil";
+                break;
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+            categoria = "Juvenil";
+            break;
+            
+            case 16:
+            case 17:
+            case 18:
+            case 19:
+            case 20:
+            categoria = "Junior";
+            break;
+
+            case 21:
+            case 22:
+            case 23:
+            case 24:
+            case 25:
+            
+            categoria = "Profissional"
+        
+            default:
+                categoria = "Inválido!"
+                break;
+        }
+
+        document.write("Nome:" +nome, "você está na categoria:" +categoria);
+
+    </script>
+    
+</body>
+</html>

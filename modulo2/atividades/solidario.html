@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa solidário</title>
+</head>
+<body>
+    <script>
+        alert ("Programa solidári9o")
+        var doar = prompt("Digite a opção desejada para doar:");
+        
+        var valor;
+        switch (doar) {
+            case 1:
+            
+                valor = "10 reais";
+                break;
+            case 2:
+           
+                valor = "25 reais";
+            break;
+            
+            case 3:
+
+            valor = "50 reaos";
+            break;
+
+           case 4:
+            
+           valor= "Outros valores";
+           break;
+
+           case 5:
+
+           valor = "Cancelar";
+           break;
+        
+            default:
+                valor = "Inválido!"
+                break;
+        }
+
+        document.write("Obrigado, você doou:" +valor);
+
+    </script>
+    
+</body>
+</html>

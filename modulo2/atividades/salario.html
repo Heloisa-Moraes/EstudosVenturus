@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lendo o salário e o financiamento</title>
+</head>
+<body>
+    <script>
+        var salario = parseInt(prompt("Digite seu salário:"));
+        var financiamento = prompt("Digite o valor do financiamento:");
+        
+        if (financiamento <= salario*5) {
+            document.write("Financiamento concedido!")
+            
+        } else {
+            document.write("Financiamento negado");
+        }
+
+        document.write("<br>","Obrigado por nos consultar!")
+    </script>
+</body>
+</html>

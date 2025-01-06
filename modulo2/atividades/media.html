@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando a média do aluno</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Digite seu nome:");
+        var nota1= parseInt(prompt("Digite sua primeira nota:"));
+        var nota2= parseInt(prompt("Digite suasegunda nota:"));
+        var nota3= parseInt(prompt("Digite sua terceira nota:"));
+        var media = (nota1 + nota2 + nota3)/3;
+
+      if (media >=7) {
+        document.write("Você está aprovado!")
+        
+      } else if (media <= 7 && media >= 5) {
+      document.write("Você está de recuperação!")
+      }   else {
+    document.write(" Você foi reprovado!")
+}
+    </script>
+</body>
+</html>
